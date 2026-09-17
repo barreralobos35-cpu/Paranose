@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Para Rosi ❤️</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  body{
+    color:#fff;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255,190,210,.25), transparent 30%),
+      radial-gradient(circle at 90% 80%, rgba(255,120,170,.18), transparent 35%),
+      linear-gradient(145deg,#170d1c,#321225 55%,#180b16);
+    overflow-x:hidden;
+  }
+  .stars{position:fixed;inset:0;pointer-events:none;opacity:.65}
+  .star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:twinkle 2.5s infinite ease-in-out}
+  @keyframes twinkle{50%{opacity:.25;transform:scale(.7)}}
+  .wrap{max-width:760px;margin:auto;padding:28px 18px 60px}
+  .hero{text-align:center;padding:48px 12px 28px}
+  .heart{font-size:44px;animation:pulse 1.8s infinite}
+  @keyframes pulse{50%{transform:scale(1.1)}}
+  h1{font-family:Georgia,serif;font-size:clamp(38px,10vw,64px);margin:12px 0 8px;font-weight:500}
+  .sub{color:#f8dbe5;font-size:16px;line-height:1.6}
+  .intro{
+    margin:22px auto 0;max-width:570px;padding:20px 22px;
+    border:1px solid rgba(255,255,255,.15);border-radius:24px;
+    background:rgba(255,255,255,.07);backdrop-filter:blur(12px);
+  }
+  .section-title{text-align:center;font-family:Georgia,serif;font-size:29px;margin:36px 0 18px}
+  .memory{
+    background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.13);
+    border-radius:25px;padding:23px;margin:14px 0;
+    box-shadow:0 14px 35px rgba(0,0,0,.18);
+    transform:translateY(12px);opacity:0;transition:.7s ease;
+  }
+  .memory.show{transform:none;opacity:1}
+  .num{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;
+       border-radius:50%;background:rgba(255,180,205,.18);color:#ffd8e5;font-weight:700;margin-bottom:9px}
+  .memory h3{font-family:Georgia,serif;font-size:22px;font-weight:500;margin:3px 0 9px}
+  .memory p{margin:0;color:#f7e8ed;line-height:1.7;font-size:16px}
+  .letter{
+    margin-top:38px;padding:29px 24px;border-radius:28px;
+    background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.055));
+    border:1px solid rgba(255,255,255,.16);box-shadow:0 18px 50px rgba(0,0,0,.24)
+  }
+  .letter h2{font-family:Georgia,serif;font-weight:500;font-size:31px;margin:0 0 20px}
+  .letter p{line-height:1.85;color:#faedf1;margin:0 0 16px}
+  .signature{font-family:Georgia,serif;font-size:22px;margin-top:25px;color:#ffdbe6}
+  .footer{text-align:center;color:#d9aebb;font-size:13px;margin-top:28px}
+  .btn{
+    display:block;margin:25px auto 0;border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.09);color:white;border-radius:999px;
+    padding:12px 22px;font-size:15px;cursor:pointer
+  }
+  .btn:active{transform:scale(.97)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="heart">♡</div>
+    <h1>Para Rosi</h1>
+    <div class="sub">Hay personas que, aunque pase el tiempo,<br>siguen teniendo un lugar especial.</div>
+    <div class="intro">
+      <div>Antes de decirte cualquier cosa…</div>
+      <div style="margin-top:8px;color:#ffdbe6">feliz cumpleaños. ❤️</div>
+    </div>
+    <button class="btn" onclick="showMemories()">Abrir un poquito más</button>
+  </section>
+
+  <section id="memories" class="hidden">
+    <div class="section-title">Algunos recuerdos de nosotros</div>
+
+    <article class="memory"><div class="num">1</div>
+      <h3>Vic y Rosi</h3>
+      <p>Me acuerdo de cuando simplemente éramos Vic y Rosi. Hablábamos prácticamente todos los días, de cualquier cosa, aunque muchas veces termináramos riéndonos por la cosa más pequeña.</p>
+    </article>
+
+    <article class="memory"><div class="num">2</div>
+      <h3>Estar ahí</h3>
+      <p>También recuerdo cómo nos apoyábamos cuando alguno estaba pasando por un momento difícil. No hacía falta tener una gran solución; muchas veces bastaba con estar ahí.</p>
+    </article>
+
+    <article class="memory"><div class="num">3</div>
+      <h3>Las visitas</h3>
+      <p>Y esas veces que llegaba a visitarte afuera de tu casa. Ahora que lo pienso, qué bonito era poder verte y simplemente pasar un rato contigo.</p>
+    </article>
+
+    <article class="memory"><div class="num">4</div>
+      <h3>Las Pringles 😂</h3>
+      <p>Cómo olvidar cuando fui a visitarte a aquella otra casa y hasta llevé unas Pringles para tu papá… aunque al final ni le gustaban y te las terminaste comiendo tú JAJAJA.</p>
+    </article>
+
+    <article class="memory"><div class="num">5</div>
+      <h3>El ramo de flores 🌷</h3>
+      <p>También me acuerdo del ramo que te llevé para tu cumpleaños y de cómo tu primo decidió entregártelo sin avisarme. Creo que pocas veces he sentido tanta pena de golpe JAJAJA.</p>
+    </article>
+
+    <article class="memory"><div class="num">6</div>
+      <h3>Boulevard 📖</h3>
+      <p>Hasta me leí completo <i>Boulevard</i> por ti, solamente para tener tema de conversación en todo momento. Ahora me da risa pensarlo, pero en ese momento para mí era lo más normal del mundo.</p>
+    </article>
+
+    <article class="memory"><div class="num">7</div>
+      <h3>El pastel de emergencia 😂</h3>
+      <p>Y ese día antes de tu cumpleaños, cuando estaba afuera de tu casa contigo y se acercaban las 12… fui a una tienda a comprarte un Pingüino para hacer como que era tu pastel de cumpleaños. JAJAJA.</p>
+    </article>
+
+    <article class="memory"><div class="num">8</div>
+      <h3>La estrategia con tu mamá</h3>
+      <p>Y cómo olvidar cuando llegué con tu pastel favorito y el de tu mamá… porque obviamente también tenía que ganarme puntos con ella JAJAJA</p>
+    </article>
+
+    <div class="letter">
+      <h2>Lo que realmente quería decirte</h2>
+      <p>Rosi, hoy no hice esto esperando que después de leerlo quieras volver a hablar conmigo como antes. Tampoco quiero que sientas que tienes que responderme de alguna manera.</p>
+      <p>Solo quería aprovechar tu cumpleaños para decirte algo que quizá debí decirte hace mucho: <b>me arrepiento de haber perdido tu amistad.</b></p>
+      <p>Lo que pasó empezó por algo que me contaron sobre ti. No sabía si era verdad o mentira y decidí decírtelo, pero entiendo que lo que más te dolió fue que no te dijera quiénes me lo habían contado. Eran mis amigos y en ese momento no supe manejar la situación de la mejor manera.</p>
+      <p>No te digo esto para justificarme. Solo quiero reconocer mi parte y decirte que lamento sinceramente que las cosas hayan terminado así.</p>
+      <p>Porque cuando recuerdo nuestra amistad, no pienso solamente en cómo terminó. Pienso en todas esas conversaciones, en las risas por cualquier tontería, en las veces que estuvimos para el otro y en todos esos pequeños momentos que en su momento parecían normales y que ahora significan muchísimo para mí.</p>
+      <p>Tal vez para ti todo esto ya quedó atrás. Y si es así, lo voy a respetar. Pero yo no quería dejar pasar tu cumpleaños sin agradecerte por haber sido una persona tan importante en una etapa de mi vida.</p>
+      <p>Ojalá tengas un cumpleaños muy bonito, que te consientan mucho y que este nuevo año de tu vida venga lleno de cosas buenas.</p>
+      <p>Y si algún día volvemos a hablar, me dará muchísimo gusto. Y si no sucede, aun así voy a estar agradecido por haber tenido una amistad tan bonita contigo.</p>
+      <div class="signature">Feliz cumpleaños, Rosi. ❤️<br>— Vic</div>
+    </div>
+    <div class="footer">Hecho con cariño, recordando una amistad que significó mucho.</div>
+  </section>
+</main>
+
+<script>
+function showMemories(){
+  const section=document.getElementById('memories');
+  section.classList.remove('hidden');
+  document.querySelector('.btn').style.display='none';
+  setTimeout(()=>section.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  setTimeout(()=>{
+    document.querySelectorAll('.memory').forEach((el,i)=>{
+      setTimeout(()=>el.classList.add('show'),i*140);
+    });
+  },250);
+}
+const stars=document.querySelector('.stars');
+for(let i=0;i<42;i++){
+  const s=document.createElement('span');
+  s.className='star';
+  s.style.left=Math.random()*100+'%';
+  s.style.top=Math.random()*100+'%';
+  s.style.opacity=(.2+Math.random()*.7);
+  s.style.animationDelay=(Math.random()*3)+'s';
+  stars.appendChild(s);
+}
+</script>
+</body>
+</html>
